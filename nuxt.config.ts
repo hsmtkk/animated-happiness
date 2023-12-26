@@ -4,4 +4,8 @@ export default defineNuxtConfig({
   modules: [
     '@invictus.codes/nuxt-vuetify'
   ],
+  runtimeConfig: {
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    TEST: process.env.TEST,
+  },
 })
